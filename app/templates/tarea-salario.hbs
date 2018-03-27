@@ -1,0 +1,13 @@
+{{#each model.people as |person|}}
+<p class={{if person.isFemale 'male' 'female'}}>
+  <strong> Name: </strong> {{person.name}}
+  <strong> Sex: </strong> {{if person.isFemale 'Female' 'Male'}}
+  <strong> Salary: </strong> {{person.salary}}
+</p>
+
+{{/each}}
+<div class="total-salary">
+  <strong>Total salary: </strong> {{model.total}}
+</div>
+
+{{outlet}}
