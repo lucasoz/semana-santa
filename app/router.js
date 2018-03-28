@@ -12,6 +12,16 @@ Router.map(function() {
     this.route('person', { path: ':id' });
   });
   this.route('tarea-salario');
+  this.route('parcial');
+  this.route('authors', function() {
+    this.route('id', { path: ':id'});
+  });
+
+
+  this.route('books', function() {
+    this.route('id',{ path: ':id'});
+  });
+  this.route('chapters');
 });
 
 export default Router;

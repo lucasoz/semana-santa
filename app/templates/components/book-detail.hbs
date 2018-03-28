@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+    <th>Title</th>
+    <th>Date of Publish</th>
+    <th>Total Chapters</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |book|}}
+      <tr>
+      <td>{{#link-to 'books.id' book.id}} {{book.title}} {{/link-to}}</td>
+      <td>{{book.datePublished}}</td>
+      <td>{{book.chapters.length}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+{{yield}}

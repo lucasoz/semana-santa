@@ -1,0 +1,21 @@
+
+<table class="table">
+  <thead>
+    <tr>
+    <th>Title</th>
+    <th>Order</th>
+    <th>Order</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |chapter|}}
+      <tr>
+      <td>{{chapter.title}}</td>
+      <td>{{chapter.ordering}}</td>
+      <td>{{chapter.book.id}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+{{yield}}

@@ -22,7 +22,7 @@ body {
   padding: 1.5em;
 }
 
-.male{
+.male, .hacer{
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -34,7 +34,7 @@ body {
   width: 20em;
 }
 
-.female{
+.female, .hecho{
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
