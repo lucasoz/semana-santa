@@ -4,6 +4,8 @@
     <th>Title</th>
     <th>Date of Publish</th>
     <th>Total Chapters</th>
+    <td>Option</td>
+
     </tr>
   </thead>
   <tbody>
@@ -12,9 +14,16 @@
       <td>{{#link-to 'books.id' book.id}} {{book.title}} {{/link-to}}</td>
       <td>{{book.datePublished}}</td>
       <td>{{book.chapters.length}}</td>
+      <td>
+        {{#link-to 'books.id.edit' book.id}} Edit {{/link-to}}
+      </td>
+      <td>
+        {{#link-to 'index'}} Delete {{/link-to}}
+      </td>
       </tr>
     {{/each}}
   </tbody>
 </table>
+
 
 {{yield}}
