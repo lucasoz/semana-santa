@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   let ENV = {
+    firebase: {
+      apiKey: 'AIzaSyDkWw5D3TOQSo5UYZOaaALmVH9LYn8NsYI',
+      authDomain: 'dcps-1.firebaseapp.com',
+      databaseURL: 'https://dcps-1.firebaseio.com',
+      storageBucket: 'dcps-1.appspot.com',
+    },
     modulePrefix: 'semana-santa',
     environment,
     rootURL: '/',

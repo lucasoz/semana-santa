@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('parcial');
   this.route('authors', function() {
     this.route('id', { path: ':id'});
+    this.route('create');
   });
 
 
@@ -24,6 +25,10 @@ Router.map(function() {
     });
   });
   this.route('chapters');
+
+  this.route('author', function() {
+    this.route('create');
+  });
 });
 
 export default Router;

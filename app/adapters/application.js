@@ -1,6 +1,10 @@
-import DS from 'ember-data';
+// import DS from 'ember-data';
+//
+// export default DS.JSONAPIAdapter.extend({
+//   host: 'http://localhost:8080',
+//   namespace: 'v1',
+// });
 
-export default DS.JSONAPIAdapter.extend({
-  host: 'http://localhost:8080',
-  namespace: 'v1',
+import FirebaseAdapter from 'emberfire/adapters/firebase';
+export default FirebaseAdapter.extend({
 });

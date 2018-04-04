@@ -1,6 +1,7 @@
 <hr>
 <form {{action 'edit' on="submit" }}>
-  <label>Title:</label>{{input value=title}}
+  <strong>Title: </strong>{{input value=model.title}}
+  <strong>Date: </strong> {{input value=model.datePublished}}
   <br>
   <button>añadir</button>
 </form>
