@@ -25,6 +25,7 @@ Router.map(function() {
   this.route('books', function() {
     this.route('id', { path: ':id'}, function() {
       this.route('edit');
+      this.route('createchapter');
     });
   });
   this.route('chapters');

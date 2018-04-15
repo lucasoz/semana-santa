@@ -1,3 +1,6 @@
 <h1>{{model.title}}´s chapters</h1>
+{{#link-to 'books.id.createchapter'}}
+  New chapter
+{{/link-to}}
 {{chapter-detail model=model.chapters}}
 {{outlet}}
