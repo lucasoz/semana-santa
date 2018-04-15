@@ -14,7 +14,10 @@ Router.map(function() {
   this.route('tarea-salario');
   this.route('parcial');
   this.route('authors', function() {
-    this.route('id', { path: ':id'});
+    this.route('id', { path: ':id'}, function() {
+      this.route('update');
+      this.route('createbook');
+    });
     this.route('create');
   });
 

@@ -5,5 +5,5 @@ export default DS.Model.extend({
   photoId: DS.attr('string'),
 
   photos: DS.belongsTo('photo'),
-  books: DS.hasMany('book'),
+  books: DS.hasMany('book',{ async: true, inverse: null }),
 });

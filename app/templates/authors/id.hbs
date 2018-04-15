@@ -1,4 +1,6 @@
 <h1>{{model.name}}´s books</h1>
+{{#link-to 'authors.id.createbook'}}
+  New book
+{{/link-to}}
 {{book-detail model=model.books}}
-
 {{outlet}}
